@@ -1,0 +1,120 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body and Background */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4 {
+    color: #00bcd4;
+}
+
+a {
+    text-decoration: none;
+    color: #00bcd4;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section .skills {
+    display: flex;
+    justify-content: space-around;
+}
+
+section .skill {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.watermark {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #aaa;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+    }
+
+    header {
+        background-color: #333;
+    }
+
+    .watermark {
+        color: #aaa;
+    }
+}
+
+/* Light Mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #ffffff;
+        color: #000;
+    }
+
+    header {
+        background-color: #f8f8f8;
+    }
+}
